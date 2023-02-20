@@ -1,5 +1,3 @@
-document.getElementById('SVM CODER HUB ADMIN PANEL VISIBILITY').style.visibility = 'hidden';
-
 function login() {
     uname = document.getElementById('uname').value;
     pass = document.getElementById('pass').value;
@@ -9,7 +7,7 @@ function login() {
     else if (uname == 'Laxmi' && pass == 'svmtchr1') {
         localStorage.setItem('name','Laxmi')
         localStorage.setItem('role','Teacher')
-        localStorage.setItem('badge','<a href="ADMIN/home.html">Admin</a>')
+        localStorage.setItem('badge','Admin')
         window.location.replace('home.html')
     }
     else if (uname == 'Yashraj' && pass == 'Yash@bestfriend') {
@@ -21,7 +19,13 @@ function login() {
     else if (uname == 'Shaurya' && pass == 'uioplol!') {
         localStorage.setItem('name','Shaurya Tripathi')
         localStorage.setItem('role','Developer')
-        localStorage.setItem('badge','<a href="ADMIN/home.html">Admin</a>')
+        localStorage.setItem('badge','Owner')
+        window.location.replace('home.html')
+    }
+    else if (uname == 'Rohit' && pass == '81155679') {
+        localStorage.setItem('name','Rohit Srivastava')
+        localStorage.setItem('role','Friend')
+        localStorage.setItem('badge','Owner')
         window.location.replace('home.html')
     }
     else if (uname == uname && pass == pass) {
@@ -29,7 +33,6 @@ function login() {
         localStorage.setItem('role','Student')
         localStorage.setItem('badge','User')
         window.location.replace('home.html')
-        localStorage.setItem('regs',localStorage.getItem('regs')+1);
     }
 }
 function project() {
@@ -48,10 +51,3 @@ function code() {
 document.getElementById('name').innerHTML = localStorage.getItem('name');
 document.getElementById('role').innerHTML = localStorage.getItem('role');
 document.getElementById('badge').innerHTML = localStorage.getItem('badge');
-if (localStorage.getItem('badge') == 'Admin' || 'Owner') {
-    document.getElementById('SVM CODER HUB ADMIN PANEL VISIBILITY').style.visibility = 'visible';
-}
-else {
-    console.error('ERROR 404 | YOU ARE NOT AN ADMIN.')
-}
-document.getElementById('regs').innerHTML = localStorage.getItem('regs');
