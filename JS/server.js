@@ -23,7 +23,7 @@ function login() {
         window.location.replace('home.html')
     }
     else if (uname == 'Rohit' && pass == '81155679') {
-        localStorage.setItem('name','Rhit Srivastava')
+        localStorage.setItem('name','Rohit Srivastava')
         localStorage.setItem('role','Friend')
         localStorage.setItem('badge','Owner')
         window.location.replace('home.html')
