@@ -1,0 +1,1 @@
+document.getElementById('projectfile').innerHTML = localStorage.getItem('projectfile').replace('null','')

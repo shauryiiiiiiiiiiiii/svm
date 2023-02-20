@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="CSS/pro.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>SVM CODER HUB | PROJECTS</title>
+</head>
+<body>
+  <header>
+    <div class="tab-bar">
+        <div class="tab">
+            <i class='bx bx-home' onclick="home()"></i>
+            <span onclick="home()">Home</span>
+          </div>
+        <div class="tab">
+          <i class='bx bxl-html5' onclick="code()"></i>
+          <span onclick="code()">HTML</span>
+        </div>
+        <div class="tab">
+            <i class='bx bx-code-alt' onclick="learn()"></i>
+            <span onclick="learn()">Learn</span>
+          </div>
+        <div class="tab">
+          <i class='bx bx-user' onclick="profile()"></i>
+          <span id="name" onclick="profile()">Login</span>
+        </div>
+      </div>
+</header>
+<h1>SVM CODER HUB - PROJECTS</h1>
+<hr>
+<div id="projectfile">
+<h1>😟 | SADLY, YOU HAVE NO SAVED PROJECTS! <br>😉 | DON'T WORRY, JUST CREATE ONE BY CLICKING ON HTML TAB MENU ABOVE OR <a href="code.html">HERE</a>.</h1>
+</div>
+<style>
+  .tab-bar {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background-color: #030114;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.5);
+}
+.tab {
+    padding: 1em;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 25%;
+    transition: all 0.15s ease-out;
+}
+.tab i {
+    margin-bottom: 0.5em;
+    font-size: 1.25em;
+    transition: all 0.15s ease-out;
+}
+.tab span {
+    font-size: 0.65em;
+    text-transform: uppercase;
+}
+.tab:hover i {
+    transform: scale(1.1);
+}
+.tab.current {
+    border-bottom: 6px solid #464646;
+    padding-bottom: calc(1em - 6px);
+}
+.tab:hover{
+    cursor: pointer;
+    color: #464646;
+}
+</style>
+<script src="JS/server.js"></script>
+<script src="JS/code.js"></script>
+<script src="JS/pro.js"></script>
+</body>
+</html>
