@@ -1,0 +1,15 @@
+#input {
+    height: 500px;
+    width: 320px;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    border: 3px solid rgb(0, 119, 255);
+    resize: none;
+}
+#output {
+    min-height: 500px;
+    height: fit-content;
+    width: 320px;
+    background-color: white;
+    color: black;
+}
